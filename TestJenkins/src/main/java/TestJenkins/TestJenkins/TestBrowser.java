@@ -17,6 +17,7 @@ public class TestBrowser {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		driver.navigate().to("https://google.com");
+		Thread.sleep(2000);
 		driver.close();
 		
 		
